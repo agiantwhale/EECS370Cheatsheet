@@ -447,7 +447,7 @@ processor with 5 instructions in flight?
       \item large programs
       \item CPI is 1, but execution is slower due to noops
     \end{itemize}
-  \begin{lstlisting}[language=Assembler]
+  \begin{lstlisting}
   add   1   2   3   write 3 in cycle 5
   noop
   noop
@@ -461,7 +461,7 @@ processor with 5 instructions in flight?
     \end{itemize}
 
   \item Detect \& Forward: May still need stalling.
-  \begin{lstlisting}[language=Assembler]
+  \begin{lstlisting}
   lw  3   6   10    reg 6 at MEM stage
   sw  6   2   10    stall 1 cycle
   \end{lstlisting}
@@ -596,7 +596,7 @@ How can we replace it?
 \rule{0.3\linewidth}{0.25pt}
 \scriptsize
 
-bang your head against the wall
+Created by Il Jae Lee, https://jae.works/monkey
 
 \end{multicols}
 \end{document}
